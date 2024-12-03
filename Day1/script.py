@@ -33,5 +33,8 @@ def part2():
     for nr in checked_nrs:
         tot += nr[0] * nr[1]
     print(tot)
+    
 part1()
 part2()
+
+input.close()
