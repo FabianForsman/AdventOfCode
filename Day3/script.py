@@ -1,4 +1,4 @@
-
+import os
 input = open("Day3/input.txt", "r")
 
 data = input.read().replace("\n", "")
