@@ -16,7 +16,7 @@ def part1():
     dist = 0
     for i in range(len(left)):
         dist += abs(left[i] - right[i])
-    print(dist)
+    return dist
 
 def part2():
     left.sort()
@@ -32,9 +32,7 @@ def part2():
     tot = 0
     for nr in checked_nrs:
         tot += nr[0] * nr[1]
-    print(tot)
-    
-part1()
-part2()
+    return tot
 
-input.close()
+print(part1())
+print(part2())

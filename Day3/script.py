@@ -1,4 +1,3 @@
-import os
 input = open("Day3/input.txt", "r")
 
 data = input.read().replace("\n", "")
@@ -12,7 +11,7 @@ def part1():
     for mul in muls:
         nrs = re.findall(nr, mul)
         tot += int(nrs[0]) * int(nrs[1])
-    print(tot)
+    return tot
 
 def part2():
     tot = 0
@@ -46,7 +45,7 @@ def part2():
             do = False
             i += 7
         i += 1
-    print(tot)
+    return tot
 
-part1()
-part2()
+print(part1())
+print(part2())
